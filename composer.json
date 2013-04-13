@@ -1,0 +1,22 @@
+{
+    "name": "dew/lesson-designer",
+    "description": "Develop lessons for the Dew Learning product lines",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Jonathan Mayhak",
+            "email": "jonathan@dewlearning.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "dev-master",
+        "slim/extras": "2.0.3",
+        "symfony/class-loader": "2.2.x-dev",
+        "symfony/finder": "*",
+        "symfony/security": "*",
+        "doctrine/orm": "2.3.3",
+        "symfony/yaml": "2.*",
+        "codeguy/upload": "*",
+        "ircmaxell/password-compat": "dev-master"
+    }
+}
