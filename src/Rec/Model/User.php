@@ -1,4 +1,4 @@
-<?php namespace LD\Model;
+<?php namespace Rec\Model;
 
 class User
 {
@@ -11,11 +11,11 @@ class User
 
     /**
      * @param $id
-     * @return \LD\Model\User|null
+     * @return \Rec\Model\User|null
      */
     public static function withId($id)
     {
-        $stmt = \LD\Helper\DB::instance()->prepare('
+        $stmt = \Rec\Helper\DB::instance()->prepare('
             SELECT id, email, first_name, last_name, date_created, password
             FROM Users
             WHERE id = :id
@@ -32,11 +32,11 @@ class User
     /**
      * @param string $email
      * @param string $password not hashed!
-     * @return bool|\LD\Model\User
+     * @return bool|\Rec\Model\User
      */
     public static function withEmailAndPassword($email, $password)
     {
-        $stmt = \LD\Helper\DB::instance()->prepare('
+        $stmt = \Rec\Helper\DB::instance()->prepare('
             SELECT id, email, first_name, last_name, date_created, password
             FROM Users
             WHERE email = :email

@@ -25,20 +25,6 @@ $loader->registerNamespaces(array(
 ));
 $loader->register();
 
-// simple authentication
-function authenticate()
-{
-    $app = \Slim\Slim::getInstance();
-    $user = \LD\Model\User::withSession();
-
-    if ($user == false) {
-        $app->redirect('/login');
-        return false;
-    }
-
-    return true;
-}
-
 require realpath(dirname(__FILE__) . '/../src/Rec') . '/routes/site.php';
 
 $app->run();

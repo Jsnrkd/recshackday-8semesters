@@ -1,6 +1,6 @@
 <?php
 
-namespace LD\Helper;
+namespace Rec\Helper;
 
 class Partial
 {

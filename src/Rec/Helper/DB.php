@@ -1,4 +1,4 @@
-<?php namespace LD\Helper;
+<?php namespace Rec\Helper;
 
 class DB
 {
