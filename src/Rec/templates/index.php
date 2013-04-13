@@ -1,4 +1,4 @@
-<?php LD\Helper\Partial::render('_header.php', array('user_full_name' => $user_full_name)); ?>
+<?php LD\Helper\Partial::render('_header.php'); ?>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12">

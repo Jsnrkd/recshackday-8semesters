@@ -39,8 +39,6 @@ function authenticate()
     return true;
 }
 
-require realpath(dirname(__FILE__) . '/../src/Rec') . '/routes/lesson.php';
-require realpath(dirname(__FILE__) . '/../src/Rec') . '/routes/auth.php';
 require realpath(dirname(__FILE__) . '/../src/Rec') . '/routes/site.php';
 
 $app->run();
