@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12">
-            <p>Learn more about the workflow of a lesson, how a lesson is developed, available components, etc.</p>
+            <p>Relify!!</p>
         </div>
     </div>
 </div>
