@@ -199,7 +199,7 @@
     </form>
 </div>
 <script src="/js/app.js"></script>
-<script src="https://www.googleapis.com/books/v1/volumes?q=college&callback=getBooks"></script>
+
 <script>
     $(document).ready(function(){
         $('#form1, #form2').on('click', 'button', function(event){
@@ -230,5 +230,6 @@
         }
     }
 </script>
+<script src="https://www.googleapis.com/books/v1/volumes?q=college&callback=getBooks"></script>
 </body>
 </html>
