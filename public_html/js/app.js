@@ -130,6 +130,18 @@ $(document).ready(function() {
 
     $("body").on("click", "#recommended_majors li", function(){
         $('span.major_text').html($(this).text());
+
+        var data = {
+            question1 : $('input[name="question1"]:checked').val(),
+            question2 : $('input[name="question2"]:checked').val(),
+            question3: $('input[name="question4"]:checked').val(),
+            question4: $('input[name="question4"]:checked').val(),
+            question5: $('input[name="question5"]:checked').val()
+        };
+
+        $.post('/newRecord', function(data) {
+            // recommended
+        });
     });
 });
 
