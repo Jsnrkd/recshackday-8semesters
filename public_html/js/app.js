@@ -1,14 +1,9 @@
-function fisherYates ( myArray ) {
-    var i = myArray.length, j, tempi, tempj;
-    if ( i === 0 ) return false;
-    while ( --i ) {
-        j = Math.floor( Math.random() * ( i + 1 ) );
-        tempi = myArray[i];
-        tempj = myArray[j];
-        myArray[i] = tempj;
-        myArray[j] = tempi;
-    }
-}
+//+ Jonas Raoni Soares Silva
+//@ http://jsfromhell.com/array/shuffle [v1.0]
+function shuffle(o){ //v1.0
+    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};
 
 function getMajor(data) {
     var data = [
@@ -68,7 +63,7 @@ function getMajor(data) {
 
     var to_return = [];
 
-    var shuffled = fisherYates(data);
+    var shuffled = shuffle(data);
 
     to_return.push(shuffled.pop());
     to_return.push(shuffled.pop());
