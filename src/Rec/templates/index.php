@@ -10,7 +10,7 @@
     <link href='css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
     <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
-    <!--<link rel="icon" href="images/favicon.png" type="image/png">-->
+    <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -226,6 +226,7 @@
                 <input type="radio" name="question4" value="Didn't take calculus">no
             </label>
             <ul id="social">
+                <li><h4>Use info from your digital life to improve the recommendation.</h4></li>
                 <li><a href="#"><img src="images/fb.png" width="194" height="25"></a></li>
                 <li><a href="#"><img src="images/twitter.gif" width="146" height="23"></a></li>
                 <li><a href="#"><img src="images/spotify.png" width="176" height="41"></a></li>
