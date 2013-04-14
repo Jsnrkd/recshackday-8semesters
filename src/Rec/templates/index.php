@@ -190,9 +190,7 @@
         <div id="form3">
             <h2>Good luck in school!</h2>
             <h3>Schools with <span class="major_text"></span> degrees you should consider.</h3>
-            <ul>
-                <li><a href="#">Coker College</a></li>
-                <li><a href="#">USC</a></li>
+            <ul id="recommended_colleges">
             </ul>
             <h3>Read up on <span class="major_text"></span> before you go.</h3>
             <ul>
