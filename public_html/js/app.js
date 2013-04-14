@@ -139,7 +139,7 @@ $(document).ready(function() {
             question5: $('input[name="question5"]:checked').val()
         };
 
-        $.post('/newRecord', function(data) {
+        $.post('/newRecord', data, function(rsp) {
             // recommended
         });
     });
