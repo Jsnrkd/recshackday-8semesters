@@ -230,6 +230,6 @@
         }
     }
 </script>
-<script src="https://www.googleapis.com/books/v1/volumes?q=college&callback=<?php $data = array('biology', 'chemistry', 'programming', 'landscape'); echo $data[array_rand($data)]; ?>"></script>
+<script src="https://www.googleapis.com/books/v1/volumes?q=<?php $data = array('biology', 'chemistry', 'programming', 'landscape'); echo $data[array_rand($data)]; ?>&callback=getBooks"></script>
 </body>
 </html>
