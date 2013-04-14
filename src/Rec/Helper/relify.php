@@ -46,12 +46,14 @@ class Relify
     }
 
     /*
-     *
+     *https://developers.relify.com/docs/api/1/get/recommenders/:recommender_id/%20:item_identifier/most_similar
      */
-    public function getRec(){
+    public function getRec($params){
         $temp = array();
-
-        return array();
+        $response = $this->client->fetch('https://api.relify.com/1/recommenders/'.$params['recommender_id'].'/'.$params['id'].'/most_similar', array('access_token' => $this->token), 'GET');
+        var_dump($response);
+        exit();
+        //return array();
     }
 
 
