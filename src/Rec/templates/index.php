@@ -76,7 +76,7 @@
         }
         #bottom{
             box-shadow: 2px 2px 5px rgba(0,0,0,.4);
-            margin: 4em auto;
+            margin: 40em auto;
             padding: 3em;
             position: relative;
             overflow: hidden;
