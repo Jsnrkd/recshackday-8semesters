@@ -20,6 +20,7 @@
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <style>
         body{
             background: #2a77c5;
@@ -46,6 +47,12 @@
             color: #918762;
             font-size: 190%;
             font-weight: normal;
+        }
+        h3{
+
+        }
+        a{
+            cursor: pointer;
         }
         .btn{
             background: #ffb431;
@@ -76,7 +83,7 @@
         }
         #bottom{
             box-shadow: 2px 2px 5px rgba(0,0,0,.4);
-            margin: 40em auto;
+            margin: 4em auto;
             padding: 3em;
             position: relative;
             overflow: hidden;
@@ -96,6 +103,45 @@
             font-size: 140%;
             margin: 1.5em 0 0 0;
         }
+        ul,li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #form3 ul{
+            margin: 0 1em;
+            padding: 0;
+        }
+        #form3 li{
+            list-style: disc;
+        }
+        li{
+            margin-bottom: 1em;
+        }
+        #social{
+            margin: 1.8em 0 2.2em 0;
+        }
+        #form1 button{
+            margin: 0;
+        }
+        #form2 button{
+            font-size: 130%;
+            margin-bottom: .2em;
+            width: 40%;
+        }
+        #bottom h2{
+            color: #2a77c5;
+            margin: 0;
+        }
+        #bottom h3{
+            color: #918762;
+            font-size: 140%;
+            font-weight: normal;
+            margin: 0;
+        }
+        #form2 h2{
+            margin-bottom: .5em;
+        }
     </style>
 </head>
 <body>
@@ -104,7 +150,7 @@
         <div class="container">
             <div class="row">
                 <div class="span5"><img src="images/8semesters-logo.png" alt="8semesters logo" width="332" height="37"></div>
-                <div class="span2 offset5"><a class="how">How it works</a></div>
+                <div class="span2 offset5"><a id="how" class="how" data-toggle="popover" data-content="Netflix can recomend movies based on its data, why not use data for a worthier cause &mdash; choosing a college major." data-placement="left">How it works</a></div>
             </div>
         </div>
     </header>
@@ -179,11 +225,17 @@
             <label class="radio inline">
                 <input type="radio" name="question4" value="Didn't take calculus">no
             </label>
+            <ul id="social">
+                <li><a href="#"><img src="images/fb.png" width="194" height="25"></a></li>
+                <li><a href="#"><img src="images/twitter.gif" width="146" height="23"></a></li>
+                <li><a href="#"><img src="images/spotify.png" width="176" height="41"></a></li>
+                <li><a href="#"><img src="images/netflix.png" width="150" height="31"></a></li>
+            </ul>
             <button class="btn btn-large btn-block">Pick your major!</button>
         </div>
         <div id="form2">
-            <h2>We recommend one of these majors for you to consider.</h2>
-            <h3>Which one do you think best fits you?</h3>
+            <h3>We recommend you consider these 3 majors.</h3>
+            <h2>Which one do you think best fits you?</h2>
             <ul id="recommended_majors">
             </ul>
         </div>
@@ -220,6 +272,8 @@
             offsetOfAnchor = $(idName).offset().top;
             $('html, body').animate({scrollTop: offsetOfAnchor});
         }
+
+        $('#how').popover();
     });
 
     function getBooks(response) {
