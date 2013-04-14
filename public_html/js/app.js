@@ -72,6 +72,48 @@ function getMajors() {
     return to_return;
 }
 
+function getColleges() {
+    var data = [
+        {
+            title : 'University of South Carolina - Columbia'
+        },
+        {
+            title : 'Clemson University'
+        },
+        {
+            title : 'Trident Technical College'
+        },
+        {
+            title : 'Greenville Technical College'
+        },
+        {
+            title : 'Midlands Technical College'
+        },
+        {
+            title : 'College of Charleson'
+        },
+        {
+            title : 'Coastal Carolina University'
+        },
+        {
+            title : 'Horry-Georgetown Technical College'
+        },
+        {
+            title : 'Tri-County Technical College'
+        }
+    ];
+
+    var to_return = [];
+
+    var shuffled = shuffle(data);
+
+    to_return.push(shuffled.pop());
+    to_return.push(shuffled.pop());
+    to_return.push(shuffled.pop());
+
+    return to_return;
+}
+
 $(document).ready(function() {
     var majors = getMajors(),
         $list = $('#recommended_majors');
