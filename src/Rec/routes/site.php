@@ -29,7 +29,11 @@ $app->post('/newRecord', function () use ($app) {
 
 
 $app->get('/rec', function () use ($app) {
-    $app->render('relify_test.php');
+    $req = $app->request();
+    $res = $app->response();
+    $res['Content-Type'] = 'application/json';
     $relify = new \Rec\Helper\Relify();
+
+    $res->body(json_encode($relify->getRec()));
 });
 
