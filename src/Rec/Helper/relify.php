@@ -18,13 +18,14 @@ class Relify
 
     public function __construct()
     {
+        //todo don't do this every time :)
         //authenticate
         $this->client = new \OAuth2\Client(self::$clientID, self::$secret);
         $params = array('scope' => 'universal', 'redirect_uri' => 'http://');
         $response = $this->client->getAccessToken(self::$endpoint, 'client_credentials', $params);
         $this->token = $response['result']['access_token'];
         $this->client->setAccessToken($this->token);
-        var_dump($response);
+        //var_dump($response);
     }
 
     // https://developers.relify.com/docs/api/1/post/data/create
@@ -44,8 +45,13 @@ class Relify
         }
     }
 
+    /*
+     *
+     */
     public function getRec(){
+        $temp = array();
 
+        return array();
     }
 
 
