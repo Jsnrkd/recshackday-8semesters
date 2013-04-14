@@ -153,31 +153,31 @@
             </label>
             <p>Do you have a pet?</p>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Likes pets">yes
+                <input type="radio" name="question5" value="Likes pets">yes
             </label>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Doesn't like pets">no
+                <input type="radio" name="question5" value="Doesn't like pets">no
             </label>
             <p>Do you play video games?</p>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Plays video games">yes
+                <input type="radio" name="question2" value="Plays video games">yes
             </label>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Doesn't play video games">no
+                <input type="radio" name="question2" value="Doesn't play video games">no
             </label>
             <p>Do you drink coffee?</p>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Drinks coffee">yes
+                <input type="radio" name="question3" value="Drinks coffee">yes
             </label>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Doesn't drink coffee">no
+                <input type="radio" name="question3" value="Doesn't drink coffee">no
             </label>
             <p>Did you take calculus in high school?</p>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Took calculus">yes
+                <input type="radio" name="question4" value="Took calculus">yes
             </label>
             <label class="radio inline">
-                <input type="radio" name="question1" value="Didn't take calculus">no
+                <input type="radio" name="question4" value="Didn't take calculus">no
             </label>
             <button class="btn btn-large btn-block">Pick your major!</button>
         </div>
