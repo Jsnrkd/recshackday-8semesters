@@ -16,11 +16,12 @@ $app->post('/newRecord', function () use ($app) {
     $state = 'sc';
     $req = $app->request();
     $responses = array($req->post('question1'), $req->post('question2'), $req->post('question3'), $req->post('question4'), $req->post('question5'));
-    foreach ($responses as $response) {
+    /*foreach ($responses as $response) {
         $params = array('user_id' => $user_id, 'answer' => $response,
             'state' => $state, 'data_set_id' => '57926de3-0722-42e5-8c07-5c9230a15110');
         $relify->addData($params);
-    }
+    }*/
+
     $res = $app->response();
     $res['Content-Type'] = 'application/json';
     $array = array('Success'=>true);
