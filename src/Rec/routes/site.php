@@ -29,11 +29,18 @@ $app->post('/newRecord', function () use ($app) {
 
 
 $app->get('/rec', function () use ($app) {
+
     $req = $app->request();
+
+    $item = $req->get('itemID');
+
+    $param = array('recommender_id' => '863171c5-c34f-4386-ad65-48834655b11f', 'id'=>$item);
+
     $res = $app->response();
     $res['Content-Type'] = 'application/json';
     $relify = new \Rec\Helper\Relify();
 
-    $res->body(json_encode($relify->getRec()));
+    $res->body(json_encode($relify->getRec($param)));
+
 });
 
