@@ -1,3 +1,15 @@
+function fisherYates ( myArray ) {
+    var i = myArray.length, j, tempi, tempj;
+    if ( i === 0 ) return false;
+    while ( --i ) {
+        j = Math.floor( Math.random() * ( i + 1 ) );
+        tempi = myArray[i];
+        tempj = myArray[j];
+        myArray[i] = tempj;
+        myArray[j] = tempi;
+    }
+}
+
 function getMajor(data) {
     var data = [
         {
@@ -54,13 +66,13 @@ function getMajor(data) {
         }
     ];
 
-    return data[Math.floor(Math.random() * data.length)];
+    var to_return = [];
+
+    var shuffled = fisherYates(data);
+
+    to_return.push(shuffled[0]);
+    to_return.push(shuffled[1]);
+    to_return.push(shuffled[2]);
+
+    return to_return;
 }
-
-function getCollegesAndBooks(major) {
-
-}
-
-$(document).ready(function() {
-
-});
