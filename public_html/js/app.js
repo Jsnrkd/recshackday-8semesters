@@ -5,7 +5,7 @@ function shuffle(o){ //v1.0
     return o;
 };
 
-function getMajor(data) {
+function getMajors() {
     var data = [
         {
             title : 'Landscape Architecture',
@@ -71,3 +71,14 @@ function getMajor(data) {
 
     return to_return;
 }
+
+$(document).ready(function() {
+    var majors = getMajors(),
+        $list = $('#recommended_majors');
+
+    $.each(majors, function(i) {
+        $list.append('<li><button class="btn">' + majors[i].title + '</button></li>');
+    });
+});
+
+

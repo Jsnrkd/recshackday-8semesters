@@ -184,10 +184,7 @@
         <div id="form2">
             <h2>We recommend one of these majors for you to consider.</h2>
             <h3>Which one do you think best fits you?</h3>
-            <ul>
-                <li><button class="btn">Graphic Design</button></li>
-                <li><button class="btn">Computer Science</button></li>
-                <li><button class="btn">Micro Biology</button></li>
+            <ul id="recommended_majors">
             </ul>
         </div>
         <div id="form3">
