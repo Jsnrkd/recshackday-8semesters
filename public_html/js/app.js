@@ -116,10 +116,16 @@ function getColleges() {
 
 $(document).ready(function() {
     var majors = getMajors(),
-        $list = $('#recommended_majors');
+        $list = $('#recommended_majors'),
+        colleges = getColleges(),
+        $colleges = $('#recommended_colleges');
 
     $.each(majors, function(i) {
         $list.append('<li><button class="btn">' + majors[i].title + '</button></li>');
+    });
+
+    $.each(colleges, function(i) {
+        $colleges.append('<li><a href="#">' + colleges[i].title + '</a></li>');
     });
 
     $("body").on("click", "#recommended_majors li", function(){
