@@ -17,6 +17,7 @@
         "doctrine/orm": "2.3.3",
         "symfony/yaml": "2.*",
         "codeguy/upload": "*",
-        "ircmaxell/password-compat": "dev-master"
+        "ircmaxell/password-compat": "dev-master",
+        "adoy/oauth2": "dev-master"
     }
 }

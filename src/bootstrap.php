@@ -3,6 +3,7 @@
 session_start();
 
 require '../vendor/autoload.php';
+require 'Rec/Helper/OAuth.php';
 
 $app = new \Slim\Slim(array(
     'templates.path' => realpath(dirname(__FILE__) . '/../src/Rec') . '/templates',
