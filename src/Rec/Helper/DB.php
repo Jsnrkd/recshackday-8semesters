@@ -20,7 +20,7 @@ class DB
         if (self::$instance === null) {
             try {
                 self::$instance = new \PDO(
-                    'mysql:host=localhost;dbname=grubbly_rec','',''
+                    'mysql:host=localhost;dbname=8semesters_rec','',''
                 );
                 self::$instance->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             } catch (\PDOException $e) {

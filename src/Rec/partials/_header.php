@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Grubbly Recommendations</title>
+    <title>8semesters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +29,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container-fluid">
-            <a class="brand" href="/">Grubbly Recommendations</a>
+            <a class="brand" href="/">8 Semesters</a>
             <div class="nav-collapse collapse">
             </div>
         </div>
