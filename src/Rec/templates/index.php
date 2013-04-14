@@ -205,6 +205,7 @@
         </div>
     </form>
 </div>
+<script src="/js/app.js"></script>
 <script>
     $(document).ready(function(){
         $('#form1, #form2').on('click', 'button', function(event){
