@@ -79,6 +79,10 @@ $(document).ready(function() {
     $.each(majors, function(i) {
         $list.append('<li><button class="btn">' + majors[i].title + '</button></li>');
     });
+
+    $("body").on("click", "#recommended_majors li", function(){
+        alert('here');
+    });
 });
 
 
