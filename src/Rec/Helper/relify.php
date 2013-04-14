@@ -14,6 +14,7 @@ class Relify
 
     //Relify oauth
     private $client;
+    private $token;
 
     public function __construct()
     {
@@ -21,9 +22,31 @@ class Relify
         $this->client = new \OAuth2\Client(self::$clientID, self::$secret);
         $params = array('scope' => 'universal', 'redirect_uri' => 'http://');
         $response = $this->client->getAccessToken(self::$endpoint, 'client_credentials', $params);
-        $this->client->setAccessToken($response['result']['access_token']);
+        $this->token = $response['result']['access_token'];
+        $this->client->setAccessToken($this->token);
         var_dump($response);
     }
 
-    public function getDa
+    // https://developers.relify.com/docs/api/1/post/data/create
+    //$data is array of data specific params :)
+    public function addData($params){
+        $params['access_token'] = $this->token;
+        $response = $this->client->fetch('https://api.relify.com/1/data/create', $params, 'POST');
+
+//        var_dump($response);
+//        exit();
+
+        if($response['code'] == '200'){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function getRec(){
+
+    }
+
+
 }
