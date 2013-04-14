@@ -193,14 +193,13 @@
             <ul id="recommended_colleges">
             </ul>
             <h3>Read up on <span class="major_text"></span> before you go.</h3>
-            <ul>
-                <li><a href="#">{{AmazonBook}}</a></li>
-                <li><a href="#">{{AmazonBook}}</a></li>
+            <ul id="recommended_books">
             </ul>
         </div>
     </form>
 </div>
 <script src="/js/app.js"></script>
+<script src="https://www.googleapis.com/books/v1/volumes?q=college&callback=getBooks"></script>
 <script>
     $(document).ready(function(){
         $('#form1, #form2').on('click', 'button', function(event){
@@ -222,6 +221,14 @@
             $('html, body').animate({scrollTop: offsetOfAnchor});
         }
     });
+
+    function getBooks() {
+        for (var i = 0; i < response.items.length; i++) {
+            var item = response.items[i];
+            // in production code, item.text should have the HTML entities escaped.
+            $('#recommended_books').append('<li><a href="#">' + item.volumeInfo.title + '</a></li>');
+        }
+    }
 </script>
 </body>
 </html>
