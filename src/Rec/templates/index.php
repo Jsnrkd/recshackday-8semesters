@@ -189,12 +189,12 @@
         </div>
         <div id="form3">
             <h2>Good luck in school!</h2>
-            <h3>Schools with {{major}} degrees you should consider.</h3>
+            <h3>Schools with <span class="major_text"></span> degrees you should consider.</h3>
             <ul>
                 <li><a href="#">Coker College</a></li>
                 <li><a href="#">USC</a></li>
             </ul>
-            <h3>Read up on {{major}} before you go.</h3>
+            <h3>Read up on <span class="major_text"></span> before you go.</h3>
             <ul>
                 <li><a href="#">{{AmazonBook}}</a></li>
                 <li><a href="#">{{AmazonBook}}</a></li>

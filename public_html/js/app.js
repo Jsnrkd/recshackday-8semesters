@@ -81,7 +81,7 @@ $(document).ready(function() {
     });
 
     $("body").on("click", "#recommended_majors li", function(){
-        alert('here');
+        $('span.major_text').html($(this).text());
     });
 });
 
