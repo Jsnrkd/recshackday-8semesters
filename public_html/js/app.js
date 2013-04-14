@@ -70,9 +70,9 @@ function getMajor(data) {
 
     var shuffled = fisherYates(data);
 
-    to_return.push(shuffled[0]);
-    to_return.push(shuffled[1]);
-    to_return.push(shuffled[2]);
+    to_return.push(shuffled.pop());
+    to_return.push(shuffled.pop());
+    to_return.push(shuffled.pop());
 
     return to_return;
 }
