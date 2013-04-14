@@ -26,5 +26,6 @@ $loader->registerNamespaces(array(
 $loader->register();
 
 require realpath(dirname(__FILE__) . '/../src/Rec') . '/routes/site.php';
+require realpath(dirname(__FILE__) . '/../src/Rec') . '/routes/api.php';
 
 $app->run();
